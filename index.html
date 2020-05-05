@@ -4,59 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Golden project</title>
+    <link rel="stylesheet" href="css/reboot.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="container">
-        <div class="header-top-bar">
-          <img src="img/logo.png" alt="logo" class="header-logo" />
-          <nav class="header-menu">
-            <div class="menu-items">
-              <a class="menu-item" href="#">Home</a>
-              <a class="menu-item" href="#">Services</a>
-              <a class="menu-item" href="#">Portfolio</a>
-              <a class="menu-item" href="#">About</a>
-              <a class="menu-item" href="#">Contact</a>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__top-bar">
+          <div class="logo">
+            <a href="#" class="logo__link"
+              ><img src="img/logo.png" alt="logo" class="logo__img"
+            /></a>
+            <div class="header__burger">
+              <span></span>
             </div>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Services</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Portfolio</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Contact</a>
+              </li>
+            </ul>
           </nav>
         </div>
-        <div class="head">
-          <div class="first">Welcome To Our Studio!</div>
-          <h1 class="second">It’s nice to Meet you</h1>
+        <div class="header__heading heading">
+          <h2 class="heading__title">Welcome To Our Studio!</h2>
+          <h1 class="heading__subtitle">It’s nice to Meet you</h1>
+          <a class="button-link" href="#">Tell Me More</a>
         </div>
-        <a class="button-link" href="#">Tell Me More</a>
       </div>
-    </div>
-    <div class="services">
-      <div class="container">
-        <div class="services-head-block">
-          <h2 class="services-head">Services</h2>
-          <p class="services-title">Proin iaculis purus consequat sem cure</p>
+    </header>
+    <section class="services">
+      <div class="services__wrapper">
+        <div class="services__heading">
+          <h2 class="services__title">Services</h2>
+          <p class="services__subtitle">
+            Proin iaculis purus consequat sem cure
+          </p>
         </div>
-        <div class="services-columns">
-          <div class="left">
-            <img src="img/icon1.png" alt="" class="services-icon" />
-            <h3 class="column-head">E-Commerce</h3>
-            <p class="column-discription">
+        <div class="services__columns columns">
+          <div class="columns__column">
+            <img src="img/icon1.png" alt="icon" class="column__icon" />
+            <h3 class="column__title">E-Commerce</h3>
+            <p class="column__discription">
               Proin iaculis purus consequat sem cure digni ssim. Donec
               porttitora entum suscipit aenean rhoncus posuere odio in
               tincidunt.
             </p>
           </div>
-          <div class="center">
-            <img src="img/icon2.png" alt="" class="services-icon" />
-            <h3 class="column-head">Responsive Web</h3>
-            <p class="column-discription">
+          <div class="columns__column">
+            <img src="img/icon2.png" alt="icon" class="column__icon" />
+            <h3 class="column__title">Responsive Web</h3>
+            <p class="column__discription">
               Proin iaculis purus consequat sem cure digni ssim. Donec
               porttitora entum suscipit aenean rhoncus posuere odio in
               tincidunt.
             </p>
           </div>
-          <div class="right">
-            <img src="img/icon3.png" alt="" class="services-icon" />
-            <h3 class="column-head">Web Security</h3>
-            <p class="column-discription">
+          <div class="columns__column">
+            <img src="img/icon3.png" alt="icon" class="column__icon" />
+            <h3 class="column__title">Web Security</h3>
+            <p class="column__discription">
               Proin iaculis purus consequat sem cure digni ssim. Donec
               porttitora entum suscipit aenean rhoncus posuere odio in
               tincidunt.
@@ -64,86 +84,102 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="portfolio">
-      <div class="container">
-        <div class="portfolio-head-block">
-          <h2 class="portfolio-head">Our portfolio</h2>
-          <p class="portfolio-title">Proin iaculis purus consequat sem cure</p>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio__wrapper">
+        <div class="portfolio__heading">
+          <h2 class="portfolio__title">Our portfolio</h2>
+          <p class="portfolio__subtitle">
+            Proin iaculis purus consequat sem cure
+          </p>
         </div>
-        <div class="img-block">
-          <img src="img/img1.jpg" alt="" class="left" />
-          <img src="img/img2.jpg" alt="" class="center" />
-          <img src="img/img3.jpg" alt="" class="right" />
-        </div>
-      </div>
-    </div>
-    <div class="about">
-      <div class="container">
-        <div class="about-head-block">
-          <h2 class="about-head">about us</h2>
-          <p class="about-title">Proin iaculis purus consequat sem cure</p>
-        </div>
-        <div class="content-block1">
-          <div class="text-block-left">
-            <h3 class="date">July 2010</h3>
-            <h4 class="name-of-work">Our Humble Beginnings</h4>
-            <p class="discription">
-              Proin iaculis purus consequat sem cure<br />
-              digni ssim. Donec porttitora entum suscipit<br />
-              aenean rhoncus posuere odio in tincidunt. Proin<br />
-              iaculis purus consequat sem cure digni<br />
-              ssim. Donec porttitora entum suscipit
-            </p>
-          </div>
-          <img src="img/about1.jpg" alt="phone" class="about-img-left" />
-        </div>
-        <div class="content-block2">
-          <img src="img/about2.jpg" alt="sea" class="about-img-right" />
-          <div class="text-block-right">
-            <h3 class="date">January 2011</h3>
-            <h4 class="name-of-work">Facing Startup Battles</h4>
-            <p class="discription">
-              Proin iaculis purus consequat sem cure<br />
-              digni ssim. Donec porttitora entum suscipit<br />
-              aenean rhoncus posuere odio in tincidunt. Proin<br />
-              iaculis purus consequat sem cure digni<br />
-              ssim. Donec porttitora entum suscipit aenean<br />
-              rhoncus posuere odio in tincidunt
-            </p>
-          </div>
-        </div>
-        <div class="content-block3">
-          <div class="text-block-left">
-            <h3 class="date">December 2012</h3>
-            <h4 class="name-of-work">Enter The Dark Days</h4>
-            <p class="discription">
-              Proin iaculis purus consequat sem cure<br />
-              digni ssim. Donec porttitora entum suscipit<br />
-              aenean rhoncus posuere odio in tincidunt. Proin<br />
-              iaculis purus consequat sem cure digni
-            </p>
-          </div>
-          <img src="img/about3.jpg" alt="hands" class="about-img-left" />
-        </div>
-        <div class="content-block4">
-          <img src="img/about4.jpg" alt="mountians" class="about-img-right" />
-          <div class="text-block-right">
-            <h3 class="date">february 2014</h3>
-            <h4 class="name-of-work">Our Triumph</h4>
-            <p class="discription">
-              Proin iaculis purus consequat sem cure<br />
-              digni ssim. Donec porttitora entum suscipit<br />
-              aenean rhoncus posuere odio in tincidunt. Proin<br />
-              iaculis purus consequat sem cure digni<br />
-              ssim. Donec porttitora entum suscipit aenean.
-            </p>
-          </div>
+        <div class="portfolio__works works">
+          <a href="#" class="works__img"
+            ><img src="img/img1.jpg" alt="" class="works__picture"
+          /></a>
+          <a href="#" class="works__img"
+            ><img src="img/img2.jpg" alt="" class="works__picture"
+          /></a>
+          <a href="#" class="works__img"
+            ><img src="img/img3.jpg" alt="" class="works__picture"
+          /></a>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="about">
+      <div class="about__wrapper">
+        <div class="about__heading">
+          <h2 class="about__title">about us</h2>
+          <p class="about__subtitle">
+            Proin iaculis purus consequat sem cure
+          </p>
+        </div>
+        <div class="about__content content">
+          <div class="content__left">
+            <div class="content__discription">
+              <h3 class="discription__title">July 2010</h3>
+              <h4 class="discription__subtitle">Our Humble Beginnings</h4>
+              <p class="discription__text">
+                Proin iaculis purus consequat sem cure<br />
+                digni ssim. Donec porttitora entum suscipit<br />
+                aenean rhoncus posuere odio in tincidunt. Proin<br />
+                iaculis purus consequat sem cure digni<br />
+                ssim. Donec porttitora entum suscipit
+              </p>
+            </div>
+            <img src="img/about1.jpg" alt="phone" class="content__img" />
+          </div>
+          <div class="content__right">
+            <img src="img/about2.jpg" alt="sea" class="content__img" />
+            <div class="content__discription">
+              <h3 class="discription__title">January 2011</h3>
+              <h4 class="discription__subtitle">Facing Startup Battles</h4>
+              <p class="discription__text">
+                Proin iaculis purus consequat sem cure<br />
+                digni ssim. Donec porttitora entum suscipit<br />
+                aenean rhoncus posuere odio in tincidunt. Proin<br />
+                iaculis purus consequat sem cure digni<br />
+                ssim. Donec porttitora entum suscipit aenean<br />
+                rhoncus posuere odio in tincidunt
+              </p>
+            </div>
+          </div>
+          <div class="content__left">
+            <div class="content__discription">
+              <h3 class="discription__title">December 2012</h3>
+              <h4 class="discription__subtitle">Enter The Dark Days</h4>
+              <p class="discription__text">
+                Proin iaculis purus consequat sem cure<br />
+                digni ssim. Donec porttitora entum suscipit<br />
+                aenean rhoncus posuere odio in tincidunt. Proin<br />
+                iaculis purus consequat sem cure digni
+              </p>
+            </div>
+            <img src="img/about3.jpg" alt="hands" class="content__img" />
+          </div>
+          <div class="content__right">
+            <img src="img/about4.jpg" alt="mountians" class="content__img" />
+            <div class="content__discription">
+              <h3 class="discription__title">february 2014</h3>
+              <h4 class="discription__subtitle">Our Triumph</h4>
+              <p class="discription__text">
+                Proin iaculis purus consequat sem cure<br />
+                digni ssim. Donec porttitora entum suscipit<br />
+                aenean rhoncus posuere odio in tincidunt. Proin<br />
+                iaculis purus consequat sem cure digni<br />
+                ssim. Donec porttitora entum suscipit aenean.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
-      <p class="copyright">© Copyright 2014-2020 FreebiesXpress.com</p>
+      <div class="footer__wrapper">
+        <p class="copyright">© Copyright 2014-2020 FreebiesXpress.com</p>
+      </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
