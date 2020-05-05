@@ -681,10 +681,13 @@
             align-items: center;
   }
   .discription__text {
-    text-align: center;
+    text-align: justify;
   }
   .about__title {
     font-size: 30px;
+  }
+  .discription__subtitle {
+    text-align: center;
   }
 }
 
@@ -707,6 +710,22 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer__link:hover {
+  color: #fed136;
+}
+
+@media (max-width: 769px) {
+  .footer__link {
+    display: block;
+    padding-top: 20px;
+  }
 }
 
 * {
